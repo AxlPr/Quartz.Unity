@@ -116,7 +116,7 @@ namespace Quartz.Unity
             ///     execution.
             /// </remarks>
             /// <param name="context">The execution context.</param>
-            /// <exception cref="SchedulerConfigException">Job cannot be instantiated.</exception>
+            /// <exception cref="JobExecutionException">Job cannot be executed.</exception>
             public void Execute(IJobExecutionContext context)
             {
                 var childContainer = unityContainer.CreateChildContainer();
